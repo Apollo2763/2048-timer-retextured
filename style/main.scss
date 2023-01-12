@@ -9,15 +9,15 @@ $tile-border-radius: 3px;
 
 $mobile-threshold: $field-width + 20px;
 
-$text-color: #776E65;
-$bright-text-color: #f9f6f2;
+$text-color: #000000;
+$bright-text-color: #ffffff;
 
-$tile-color: #eee4da;
-$tile-gold-color: #edc22e;
+$tile-color: #0088ff;
+$tile-gold-color: #ff7700;
 $tile-gold-glow-color: lighten($tile-gold-color, 15%);
 
 $game-container-margin-top: 40px;
-$game-container-background: #bbada0;
+$game-container-background: #a7a7a7;
 
 $transition-speed: 100ms;
 
@@ -25,7 +25,7 @@ html, body {
   margin: 0;
   padding: 0;
 
-  background: #faf8ef;
+  background: #ff0000;
   color: $text-color;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
@@ -337,16 +337,16 @@ hr {
 
   // Colors for all 11 states, false = no special color
   $special-colors: false false, // 2
-                   false false, // 4
-                   #f78e48 true, // 8
-                   #fc5e2e true, // 16
-                   #ff3333 true, // 32
+                   #0000ff false, // 4
+                   #7700ff true, // 8
+                   #ff00ff true, // 16
+                   #ff0077 true, // 32
                    #ff0000 true, // 64
                    false true, // 128
-                   false true, // 256
-                   false true, // 512
-                   false true, // 1024
-                   false true; // 2048
+                   #ffff00 true, // 256
+                   #77ff00 true, // 512
+                   #00ff00 true, // 1024
+                   #00ff77 true; // 2048
 
   // Build tile colors
   @while $exponent <= $limit {
